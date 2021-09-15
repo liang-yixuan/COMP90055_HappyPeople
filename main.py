@@ -100,8 +100,8 @@ def predict():
 
     
     with open(os.path.join(json_dir, imgName[:imgName.find(".")] + ".json"), 'w', encoding="utf-8") as f:
-        obj_json = json.dumps(obj_list)
-        json.dump(obj_json, f)
+        # obj_json = json.dumps(obj_list)
+        json.dump(obj_list, f)
 
     for i in os.listdir(pred_dir):
         file_path = os.path.join(pred_dir, i)
