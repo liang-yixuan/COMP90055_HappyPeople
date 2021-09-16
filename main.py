@@ -31,7 +31,8 @@ def predict():
     os.system("cd faster-rcnn.pytorch && python demo.py --net vgg16 --dataset Gender --checksession 1 --checkepoch 10 --checkpoint 957 --load_dir models")
     os.system("cd faster-rcnn.pytorch && python demo.py --net vgg16 --dataset Race --checksession 1 --checkepoch 10 --checkpoint 957 --load_dir models")
     obj_list = []
-    with open(os.path.join(pred_dir, imgName[:imgName.find(".")] + "_Emotion.txt"), 'r') as f:
+    
+    with open(os.path.join(pred_dir, imgName[:imgName.find(".")] + "_Gender.txt"), 'r') as f:
         for line in f:
             line = line.strip().split(" ")
             x1, y1, x2, y2 = float(line[0]), float(line[1]), float(line[2]), float(line[3])
@@ -42,17 +43,18 @@ def predict():
                 continue
             for obj in obj_list:
                 if abs(obj["x1"] - x1) < 10 and abs(obj["y1"] - y1) < 10 and abs(obj["x2"] - x2) < 10 and abs(obj["y2"] - y2) < 10:
-                    overlap = True
-                    if obj["Emotion_score"] < score:
+                    if "Gender_score" not in obj or obj["Gender_score"] < score:
+                        overlap = True
+                    if obj["Gender_score"] < score:
                         obj["x1"], obj["y1"], obj["x2"], obj["y2"] = x1, y1, x2, y2
-                        obj["Emotion_score"] = score
-                        obj["Emotion"] = cls
+                        obj["Gender_score"] = score
+                        obj["Gender"] = cls
             if not overlap:
                 new_obj = {}
                 new_obj["name"] = "person_" + str(len(obj_list) + 1)
                 new_obj["x1"], new_obj["y1"], new_obj["x2"], new_obj["y2"] = x1, y1, x2, y2
-                new_obj["Emotion_score"] = score
-                new_obj["Emotion"] = cls
+                new_obj["Gender_score"] = score
+                new_obj["Gender"] = cls
                 obj_list.append(new_obj)
     
     with open(os.path.join(pred_dir, imgName[:imgName.find(".")] + "_Age.txt"), 'r') as f:
@@ -67,17 +69,20 @@ def predict():
                         obj["Age_score"] = score
                         obj["Age"] = cls
 
-    with open(os.path.join(pred_dir, imgName[:imgName.find(".")] + "_Gender.txt"), 'r') as f:
+    with open(os.path.join(pred_dir, imgName[:imgName.find(".")] + "_Emotion.txt"), 'r') as f:
         for line in f:
             line = line.strip().split(" ")
             x1, y1, x2, y2 = float(line[0]), float(line[1]), float(line[2]), float(line[3])
             score = float(line[4])
             cls = line[5]
+            overlap = False
+            if score < THRESHOLD:
+                continue
             for obj in obj_list:
                 if abs(obj["x1"] - x1) < 10 and abs(obj["y1"] - y1) < 10 and abs(obj["x2"] - x2) < 10 and abs(obj["y2"] - y2) < 10:
-                    if "Gender_score" not in obj or obj["Gender_score"] < score:
-                        obj["Gender_score"] = score
-                        obj["Gender"] = cls
+                    if "Emotion_score" not in obj or obj["Emotion_score"] < score:
+                        obj["Emotion_score"] = score
+                        obj["Emotion"] = cls
 
     with open(os.path.join(pred_dir, imgName[:imgName.find(".")] + "_Race.txt"), 'r') as f:
         for line in f:
