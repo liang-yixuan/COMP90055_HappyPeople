@@ -7,37 +7,83 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#FFC107">
+    android:background="#FFF8DD">
+
+    <ImageButton
+        android:id="@+id/menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menubar"
+        android:background="#fff8dd" />
+
 
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HappyPeople"
-        android:textSize="60sp"
+        android:text="HAPPY ;)      \n        PEOPLE"
+        android:fontFamily="sans-serif"
+        android:textColor="#E94D1C"
+        android:textSize="50sp"
         android:gravity="center"
         android:textStyle="bold"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="80dp"/>
 
-    <Button
-        android:id="@+id/btn_1"
-        android:layout_width="300dp"
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="An App Identify your Age, Gender, Ethnicity and Emotion"
         android:layout_gravity="center"
-        android:layout_height="50dp"
-        android:text="upload image"
-        android:textSize="20sp"
-        android:background="@drawable/bg_btn1"
-        android:layout_marginTop="100dp"/>
+        android:textSize="20dp"
+        android:textColor="#E94D1C"
+        android:fontFamily="cursive"
+        android:layout_marginTop="20dp" />
 
-    <Button
-        android:id="@+id/btn_2"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:text="take a photo"
-        android:textSize="20sp"
-        android:background="@drawable/bg_btn1"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="70dp">
+
+        <ImageButton
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            android:background="#fff8dd" />
+
+        <ImageButton
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/library"
+            android:background="#fff8dd"
+            />
+
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_1"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="upload image"-->
+<!--        android:textSize="20sp"-->
+<!--        android:background="@drawable/bg_btn1"-->
+<!--        android:layout_marginTop="100dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_2"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="take a photo"-->
+<!--        android:textSize="20sp"-->
+<!--        android:background="@drawable/bg_btn1"-->
+<!--        android:layout_marginTop="70dp"/>-->
 
 
 

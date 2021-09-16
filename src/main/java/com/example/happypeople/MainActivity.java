@@ -22,6 +22,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -53,8 +54,9 @@ import okhttp3.Response;
 public class MainActivity extends AppCompatActivity {
 
     //    private String url = "http://" + "10.0.2.2" + ":" + 5000 + "/";
-    private Button mBtn1;
-    private Button mBtn2;
+    private ImageButton mBtn1;
+    private ImageButton mBtn2;
+    private ImageButton mMenuBtn;
 
     private void requestPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
