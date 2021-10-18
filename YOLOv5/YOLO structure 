@@ -1,0 +1,76 @@
+
+.
+├── yolov5-master
+│   ├── data
+│   │   ├── HappyPeopleAge.yaml
+│   │   ├── HappyPeopleEmotion.yaml
+│   │   ├── HappyPeopleEthnicity.yaml
+│   │   └── HappyPeopleGender.yaml
+│   ├── ...
+│   ├── train.py
+│   └── yolov5l.pt
+├── happypeople_age
+│   ├── images
+│   │   ├── train
+│   │   │   ├── train_00001.jpg
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.jpg
+│   │       └──  ...
+│   ├── labels
+│   │   ├── train
+│   │   │   ├── train_00001.txt
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.txt
+│   │       └──  ...
+├── happypeople_emotion
+│   ├── images
+│   │   ├── train
+│   │   │   ├── train_00001.jpg
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.jpg
+│   │       └──  ...
+│   ├── labels
+│   │   ├── train
+│   │   │   ├── train_00001.txt
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.txt
+│   │       └──  ...
+├── happypeople_ethnicity
+│   ├── images
+│   │   ├── train
+│   │   │   ├── train_00001.jpg
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.jpg
+│   │       └──  ...
+│   ├── labels
+│   │   ├── train
+│   │   │   ├── train_00001.txt
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.txt
+│   │       └──  ...
+└── happypeople_gender
+    ├── images
+    │   ├── train
+    │   │   ├── train_00001.jpg
+    │   │   └──  ...
+    │   └── val
+    │       ├── test_0001.jpg
+    │       └──  ...
+    ├── labels
+    │   ├── train
+    │   │   ├── train_00001.txt
+    │   │   └──  ...
+    │   └── val
+    │       ├── test_0001.txt
+    │       └──  ...
+
+
+
+
+
