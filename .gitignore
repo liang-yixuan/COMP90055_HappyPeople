@@ -1,2 +1,6 @@
+
 *.jpeg
+
+# models
+models_train/
 *.pt
