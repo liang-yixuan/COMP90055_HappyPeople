@@ -1,0 +1,81 @@
+
+.
+├── 01_Data_Process.py
+├── EmoLabel
+│   └── list_patition_label.txt
+├── boundingbox
+│   ├── test_0001_boundingbox.txt
+│   ├── test_0002_boundingbox.txt
+│   ├── test_0003_boundingbox.txt
+│   ├── ...
+│   ├── train_00001_boundingbox.txt
+│   ├── train_00002_boundingbox.txt
+│   ├── train_00003_boundingbox.txt
+│   └── ...
+├── data
+│   ├── images
+│   │   ├── train
+│   │   │   ├── train_00001.jpg
+│   │   │   ├── train_00002.jpg
+│   │   │   ├── train_00003.jpg
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.jpg
+│   │       ├── test_0002.jpg
+│   │       ├── test_0003.jpg
+│   │       └──  ...
+│   ├── labels_age
+│   │   ├── train
+│   │   │   ├── train_00001.txt
+│   │   │   ├── train_00002.txt
+│   │   │   ├── train_00003.txt
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.txt
+│   │       ├── test_0002.txt
+│   │       ├── test_0003.txt
+│   │       └──  ...
+│   ├── labels_emotion
+│   │   ├── train
+│   │   │   ├── train_00001.txt
+│   │   │   ├── train_00002.txt
+│   │   │   ├── train_00003.txt
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.txt
+│   │       ├── test_0002.txt
+│   │       ├── test_0003.txt
+│   │       ├── ...
+│   │       └── test_3068.txt
+│   ├── labels_ethnicity
+│   │   ├── train
+│   │   │   ├── train_00001.txt
+│   │   │   ├── train_00002.txt
+│   │   │   ├── train_00003.txt
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.txt
+│   │       ├── test_0002.txt
+│   │       ├── test_0003.txt
+│   │       └──  ...
+│   └── labels_gender
+│   │   ├── train
+│   │   │   ├── train_00001.txt
+│   │   │   ├── train_00002.txt
+│   │   │   ├── train_00003.txt
+│   │   │   └──  ...
+│   │   └── val
+│   │       ├── test_0001.txt
+│   │       ├── test_0002.txt
+│   │       ├── test_0003.txt
+│   │       └── ...
+└── manual
+    ├── test_0001_manu_attri.txt
+    ├── test_0002_manu_attri.txt
+    ├── ...
+    ├── train_00001_manu_attri.txt
+    ├── train_00002_manu_attri.txt
+    ├── train_00003_manu_attri.txt
+    └── ...
+
+
