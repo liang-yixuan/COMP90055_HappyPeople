@@ -16,12 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class BitmapUtil {
-    /**
-     * 获取图片的旋转角度
-     *
-     * @param filePath
-     * @return
-     */
+
     public static int getRotateAngle(String filePath) {
         int rotate_angle = 0;
         try {
@@ -44,13 +39,7 @@ public class BitmapUtil {
         return rotate_angle;
     }
 
-    /**
-     * 旋转图片角度
-     *
-     * @param angle
-     * @param bitmap
-     * @return
-     */
+
     public static Bitmap setRotateAngle(int angle, Bitmap bitmap) {
 
         if (bitmap != null) {
@@ -64,7 +53,7 @@ public class BitmapUtil {
 
     }
 
-    //转换为圆形状的bitmap
+
     public static Bitmap createCircleImage(Bitmap source) {
         int length = source.getWidth() < source.getHeight() ? source.getWidth() : source.getHeight();
         Paint paint = new Paint();
@@ -77,14 +66,6 @@ public class BitmapUtil {
         return target;
     }
 
-
-
-    /**
-     * 图片压缩-质量压缩
-     *
-     * @param filePath 源图片路径
-     * @return 压缩后的路径
-     */
 
     public static String compressImage(String filePath) {
 
@@ -118,9 +99,6 @@ public class BitmapUtil {
         }
     }
 
-    /**
-     * 根据路径获得图片信息并按比例压缩，返回bitmap
-     */
     public static Bitmap getSmallBitmap(String filePath) {
         final BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;//只解析图片边沿，获取宽高

@@ -57,7 +57,6 @@ import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    //    private String url = "http://" + "10.0.2.2" + ":" + 5000 + "/";
     private ImageButton mBtn1;
     private ImageButton mBtn2;
     private ImageButton mMenuBtn;
@@ -65,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void requestPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            // 先判断有没有权限
+
             if (Environment.isExternalStorageManager()) {
 //                Toast.makeText(MainActivity.this, "have permission", Toast.LENGTH_LONG).show();
             } else {
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            // 先判断有没有权限
+
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED &&
                     ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED &&
                     ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
@@ -165,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Uri createImageUri() {
         String status = Environment.getExternalStorageState();
-        // 判断是否有SD卡,优先使用SD卡存储,当没有SD卡时使用手机存储
         if (status.equals(Environment.MEDIA_MOUNTED)) {
             return getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new ContentValues());
         } else {
