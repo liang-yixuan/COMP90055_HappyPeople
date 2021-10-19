@@ -1,4 +1,3 @@
-(base) yixuan@SHORTs-MacBook-Air Data_Preprocess % tree -v --charset utf-8
 
 .
 ├── 01_Data_Process.py
@@ -6,25 +5,17 @@
 │   └── list_patition_label.txt
 ├── boundingbox
 │   ├── test_0001_boundingbox.txt
-│   ├── test_0002_boundingbox.txt
-│   ├── test_0003_boundingbox.txt
 │   ├── ...
 │   ├── train_00001_boundingbox.txt
-│   ├── train_00002_boundingbox.txt
-│   ├── train_00003_boundingbox.txt
 │   └──  ...
 ├── data
 │   ├── images
 │   │   ├── train
 │   │   │   ├── train_00001.jpg
-│   │   │   ├── train_00002.jpg
-│   │   │   ├── train_00003.jpg
 │   │   │   ├── ...
 │   │   │   └── train_12271.jpg
 │   │   └── val
 │   │       ├── test_0001.jpg
-│   │       ├── test_0002.jpg
-│   │       ├── test_0003.jpg
 │   │       ├── ...
 │   │       └── test_3068.jpg
 │   ├── labels_age
@@ -41,15 +32,9 @@
 │       └── val
 └── manual
     ├── test_0001_manu_attri.txt
-    ├── test_0002_manu_attri.txt
-    ├── test_0003_manu_attri.txt
     ├── ...
-    ├── test_3068_manu_attri.txt
     ├── train_00001_manu_attri.txt
-    ├── train_00002_manu_attri.txt
-    ├── train_00003_manu_attri.txt
-    ├── ...
-    └── train_12271_manu_attri.txt
+    └── ...
 
 
 

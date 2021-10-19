@@ -1,4 +1,4 @@
-# Deploy a web service for YOLOv5 using Flask
+# Deploy a backend application for YOLOv5 using Flask
 
 ## Instructions before using code
 
