@@ -14,7 +14,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -128,6 +127,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-.pth
+*.pth
 .vscode/
-faster-rcnn.pytorch/
+faster-rcnn.pytorch/models/*

@@ -1,0 +1,11 @@
+flask
+cython
+cffi
+opencv-python
+msgpack
+easydict
+matplotlib
+pyyaml==5.4.1
+tensorboardX
+pycocotools
+scipy==1.2.1
