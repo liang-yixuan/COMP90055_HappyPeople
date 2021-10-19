@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8DD"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E94D1C"
+        android:textSize="18sp"
+        android:text="About us\n"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E94D1C"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="This app is the result of a research project conducted by students at the University of Melbourne.\n\nThe app is able to identify human faces in an image and classified them based on age, emotion, ethnicity and gender.\n\nThe app uses AI (object detection) technologies that have been trained on human faces. The training data is restricted to research purpose only.\n\nContact:\nyichezhang3@student.unimelb.edu.au" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="back"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@drawable/bg_btn1"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>
