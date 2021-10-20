@@ -7,7 +7,6 @@ Please download the model weights from [Google Drive](https://drive.google.com/d
 The Structure:
 ![structure](structure.png)
 
-
 ## Instructions for running the code
 
 Launch your application locally on your computer (in local virtual environment or in Docker): 
