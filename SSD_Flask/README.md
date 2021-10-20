@@ -1,17 +1,38 @@
-# Deploy a backend application for YOLOv5 using Flask
+# Deploy a backend application for SSD using Flask
 
 ## Instructions before using code
 
-Please download the model weights from [Google Drive](https://drive.google.com/drive/folders/1a7y-JOX-hIjkyIQTgAV_CBYyeUTPJCfX?usp=sharing) and place them into the 'models_train' folder (See below).
+Please download the model weights from [Google Drive](https://drive.google.com/drive/folders/1U2nyjNXI8JqtxtaFizSVIsiI5WHE0c6M?usp=sharing) and place them into the 'model_data' folder (See below).
 
-![structure](structure.png)
+The Structure:
+ssd-pytorch
+├─ Dockerfile
+├─ app.py
+├─ model_data
+│    ├─ age_1.pth
+│    ├─ emotion_1.pth
+│    ├─ gender_1.pth
+│    ├─ race_1.pth
+│    └─ voc_classes.txt
+├─ nets
+│    ├─ ssd.py
+│    ├─ ssd_layers.py
+│    ├─ ssd_training.py
+│    └─ vgg.py
+├─ requirements.txt
+├─ ssd_2.py
+├─ utils
+│    ├─ box_utils.py
+│    ├─ config.py
+│    └─ dataloader.py
+└─ voc_annotation.py
+
 
 ## Instructions for running the code
 
 Launch your application locally on your computer (in local virtual environment or in Docker): 
 ```console
 # LOCAL NEW VIRTUAL ENV
-pip install -r torch_requirements.txt
 pip install -r requirements.txt
 python app.py
 ```
@@ -19,14 +40,14 @@ python app.py
 ```console
 # DOCKER
 # building docker image
-docker image build -t flask_yolov5:latest .
+docker image build -t ssd:latest .
 
 # running docker container (interactively, deleted when exit)
-docker run --rm -it -p 5000:5000 flask_yolov5:latest
+docker run --rm -it -p 5000:5000 ssd:latest
 
 # uploading docker image to personal account
-docker image tag flask_yolov5:latest USRNAME/flask_yolov5:latest
-docker image push USRNAME/flask_yolov5:latest
+docker image tag ssd:latest USRNAME/ssd:latest
+docker image push USRNAME/ssd:latest
 docker system prune
 ```
 
@@ -34,4 +55,4 @@ Once started, your application should be available on http://localhost:5000.
 
 
 ## Credit:
-This repo is build on https://github.com/ovh/ai-training-examples/tree/main/jobs/yolov5-web-service
+This repo is build on https://github.com/bubbliiiing/ssd-pytorch
