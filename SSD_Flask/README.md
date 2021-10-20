@@ -5,27 +5,7 @@
 Please download the model weights from [Google Drive](https://drive.google.com/drive/folders/1U2nyjNXI8JqtxtaFizSVIsiI5WHE0c6M?usp=sharing) and place them into the 'model_data' folder (See below).
 
 The Structure:
-ssd-pytorch
-├─ Dockerfile
-├─ app.py
-├─ model_data
-│    ├─ age_1.pth
-│    ├─ emotion_1.pth
-│    ├─ gender_1.pth
-│    ├─ race_1.pth
-│    └─ voc_classes.txt
-├─ nets
-│    ├─ ssd.py
-│    ├─ ssd_layers.py
-│    ├─ ssd_training.py
-│    └─ vgg.py
-├─ requirements.txt
-├─ ssd_2.py
-├─ utils
-│    ├─ box_utils.py
-│    ├─ config.py
-│    └─ dataloader.py
-└─ voc_annotation.py
+![structure](structure.png)
 
 
 ## Instructions for running the code
