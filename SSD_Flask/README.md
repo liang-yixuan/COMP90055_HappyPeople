@@ -5,7 +5,6 @@
 Please download the model weights from [Google Drive](https://drive.google.com/drive/folders/1U2nyjNXI8JqtxtaFizSVIsiI5WHE0c6M?usp=sharing) and place them into the 'model_data' folder (See below).
 Edit the voc_classes.txt file in model_data with the categories you need to detect
 
-
 The Structure:
 ![structure](structure.png)
 
