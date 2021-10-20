@@ -41,6 +41,9 @@ The classes_path points to the txt corresponding to the detection category. **<b
 After the modification is completed, you can run predict.py for detection. After running, enter the image path to detect.<br>
 <br>
 
+### The structure shows below:<br>
+![structure](structure_1.png)
+
 ## Reference
 https://github.com/pierluigiferrari/ssd_keras  
 https://github.com/kuhung/SSD_keras  
