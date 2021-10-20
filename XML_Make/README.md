@@ -3,3 +3,8 @@ The txt file can be used to make the XML format data that can be used by SSD. <b
 
 The txt file format shows below: <br>
 ![txt](txt.png)
+<br>
+Then you can use the xml+make.py to make the XML format data for training. <br>
+
+The XML file format shows below: <br>
+![XML](xml.png)
