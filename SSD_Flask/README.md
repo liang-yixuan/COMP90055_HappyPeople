@@ -6,7 +6,27 @@ Please download the model weights from [Google Drive](https://drive.google.com/d
 Then you need to edit the voc_classes.txt file in model_data with the categories you need to detect
 
 The Structure:<br>
-<img src = "structure.png" width="800">
+SSD_Flask<br>
+├─ Dockerfile<br>
+├─ app.py<br>
+├─ model_data<br>
+│    ├─ age_1.pth<br>
+│    ├─ emotion_1.pth<br>
+│    ├─ gender_1.pth<br>
+│    ├─ race_1.pth<br>
+│    └─ voc_classes.txt<br>
+├─ nets<br>
+│    ├─ ssd.py<br>
+│    ├─ ssd_layers.py<br>
+│    ├─ ssd_training.py<br>
+│    └─ vgg.py<br>
+├─ requirements.txt<br>
+├─ ssd_2.py<br>
+├─ utils<br>
+│    ├─ box_utils.py<br>
+│    ├─ config.py<br>
+│    └─ dataloader.py<br>
+└─ voc_annotation.py<br>
 
 ## Instructions for running the code
 
