@@ -25,7 +25,8 @@ The content of the model_data/cls_classes.txt file is:<br>
 cat
 dog
 ...
-```<br>
+```
+<br>
 Modify the classes_path in voc_annotation.py to correspond to cls_classes.txt, and run voc_annotation.py.
 
 3. Start network training<br>
