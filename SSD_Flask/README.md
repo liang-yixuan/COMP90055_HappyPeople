@@ -6,7 +6,7 @@ Please download the model weights from [Google Drive](https://drive.google.com/d
 Then you need to edit the voc_classes.txt file in model_data with the categories you need to detect
 
 The Structure:
-![structure](structure.png)
+<img src = "structure.png" width = "375">
 
 ## Instructions for running the code
 
