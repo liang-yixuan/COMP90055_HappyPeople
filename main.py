@@ -45,13 +45,12 @@ def predict():
             if score < THRESHOLD:
                 continue
             for obj in obj_list:
-                if abs(obj["x1"] - x1) < 10 and abs(obj["y1"] - y1) < 10 and abs(obj["x2"] - x2) < 10 and abs(obj["y2"] - y2) < 10:
-                    if "gender_score" not in obj or obj["gender_score"] < score:
-                        overlap = True
+                if bb_intersection_over_union((obj["x1"], obj["y1"], obj["x2"], obj["y2"]), (x1,y1,x2,y2)) >= 0.8:
+                    overlap = True
                     if obj["gender_score"] < score:
                         obj["x1"], obj["y1"], obj["x2"], obj["y2"] = x1, y1, x2, y2
                         obj["gender_score"] = score
-                        obj["gender"] = cls
+                        obj["gender_class_label"] = cls
             if not overlap:
                 new_obj = {}
                 new_obj["object"] = len(obj_list) + 1
@@ -67,7 +66,7 @@ def predict():
             score = float(line[4])
             cls = line[5]
             for obj in obj_list:
-                if abs(obj["x1"] - x1) < 10 and abs(obj["y1"] - y1) < 10 and abs(obj["x2"] - x2) < 10 and abs(obj["y2"] - y2) < 10:
+                if bb_intersection_over_union((obj["x1"], obj["y1"], obj["x2"], obj["y2"]), (x1,y1,x2,y2)) >= 0.8:
                     if "age_score" not in obj or obj["age_score"] < score:
                         obj["age_score"] = score
                         obj["age_class_label"] = cls
@@ -80,7 +79,7 @@ def predict():
             cls = line[5]
             overlap = False
             for obj in obj_list:
-                if abs(obj["x1"] - x1) < 10 and abs(obj["y1"] - y1) < 10 and abs(obj["x2"] - x2) < 10 and abs(obj["y2"] - y2) < 10:
+                if bb_intersection_over_union((obj["x1"], obj["y1"], obj["x2"], obj["y2"]), (x1,y1,x2,y2)) >= 0.8:
                     if "emo_score" not in obj or obj["emo_score"] < score:
                         obj["emo_score"] = score
                         obj["emo_class_label"] = cls
@@ -92,7 +91,7 @@ def predict():
             score = float(line[4])
             cls = line[5]
             for obj in obj_list:
-                if abs(obj["x1"] - x1) < 10 and abs(obj["y1"] - y1) < 10 and abs(obj["x2"] - x2) < 10 and abs(obj["y2"] - y2) < 10:
+                if bb_intersection_over_union((obj["x1"], obj["y1"], obj["x2"], obj["y2"]), (x1,y1,x2,y2)) >= 0.8:
                     if "ethnicity_score" not in obj or obj["ethnicity_score"] < score:
                         obj["ethnicity_score"] = score
                         obj["ethnicity_class_label"] = cls
@@ -147,6 +146,25 @@ def drawBoundingBoxes(imageData, inferenceResults):
         cv2.rectangle(imageData,(x1, y1), (x2, y2), color, thick)
         cv2.putText(imageData, label, (x1, y1 - 5), 2, 1e-3 * (imgHeight + imgWidth), color, thick//2)
     return imageData
+
+def bb_intersection_over_union(boxA, boxB):
+	# determine the (x, y)-coordinates of the intersection rectangle
+	xA = max(boxA[0], boxB[0])
+	yA = max(boxA[1], boxB[1])
+	xB = min(boxA[2], boxB[2])
+	yB = min(boxA[3], boxB[3])
+	# compute the area of intersection rectangle
+	interArea = max(0, xB - xA + 1) * max(0, yB - yA + 1)
+	# compute the area of both the prediction and ground-truth
+	# rectangles
+	boxAArea = (boxA[2] - boxA[0] + 1) * (boxA[3] - boxA[1] + 1)
+	boxBArea = (boxB[2] - boxB[0] + 1) * (boxB[3] - boxB[1] + 1)
+	# compute the intersection over union by taking the intersection
+	# area and dividing it by the sum of prediction + ground-truth
+	# areas - the interesection area
+	iou = interArea / float(boxAArea + boxBArea - interArea)
+	# return the intersection over union value
+	return iou
 
     
 if __name__ == '__main__':
