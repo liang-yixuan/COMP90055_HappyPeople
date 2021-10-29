@@ -1,7 +1,12 @@
 # HappyPeople_Android
 
-Home page: src/main/java/com.example.happypeople/MainActivity.java
+This is a simple Android application that takes a user selfie and predicts a person's identity (Age, Emtion, Ethnicity, Gender).
 
-Result page: src/main/java/com.example.happypeople/ResultActivity.java
+## Home page
+<img src="home.png" height="400">
 
-ResultActivity.java contains the method for image uploading
+## Result page
+<img src="result.png" height="400">
+
+## About page
+<img src="about.png" height="400">
