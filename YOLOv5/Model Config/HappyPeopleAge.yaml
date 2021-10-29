@@ -1,8 +1,0 @@
-path: ../happypeople_age  # dataset root dir
-train: images/train  # train images (relative to 'path') 
-val: images/val  # val images (relative to 'path') 
-test:  # test images (optional)
-
-# Classes
-nc: 5  # number of classes
-names: ['0-3', '4-19', '20-39', '40-69', '70+']  # class names
