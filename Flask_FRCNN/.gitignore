@@ -127,6 +127,15 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+<<<<<<< HEAD:Flask_FRCNN/.gitignore
 *.pth
 .vscode/
 faster-rcnn.pytorch/models/*
+=======
+*.jpeg
+
+# models
+models_train/
+*.pt
+
+>>>>>>> yixuan:.gitignore
