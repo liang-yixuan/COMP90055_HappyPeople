@@ -13,7 +13,8 @@ Object detection System to identify age, emotion, ethnicity, and gender on human
 1. In [Model Training](https://github.com/Yicheng-ZHANG/COMP90055_HappyPeople/tree/main/Model%20Training)
 
 - Data transformation from the [**Real-world Affective Faces Database**](http://www.whdeng.cn/raf/model1.html) into COCO and VOC format
-- Train models in open-sourced [**SSD**](https://github.com/bubbliiiing/ssd-pytorch), [**Faster RCNN**](https://github.com/jwyang/faster-rcnn.pytorch), [**YOLOv5**](https://github.com/ultralytics/yolov5/tree/v5.0) framework, using Pytorch   
+- Train models in open-sourced [**SSD**](https://github.com/bubbliiiing/ssd-pytorch), [**Faster RCNN**](https://github.com/jwyang/faster-rcnn.pytorch), [**YOLOv5**](https://github.com/ultralytics/yolov5/tree/v5.0) frameworks, using Pytorch
+- Our [**trained models**](https://drive.google.com/drive/folders/1tApOSxJigiSoclxau9_nBXM2P1DXP6Kl?usp=sharing) used in the applications are available.   
 
 2. In [Backend](https://github.com/Yicheng-ZHANG/COMP90055_HappyPeople/tree/main/Backend) - API
 
