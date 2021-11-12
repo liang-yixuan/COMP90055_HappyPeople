@@ -29,7 +29,8 @@ The program will extract the corresponding label .txt files for each of the four
 The training process requires a config file written in .yaml format for specifying the directory of the data and the categories of the target output.  We recommend placing the data outside of the main YOLOv5 folder and place the .yaml file in the "data" folder inside the main YOLOv5 folder. 
 
 For each model, copy the image train and val folders from the previous "Data Preprocess" step into the image folder, and the label train and val folders into the corresponding labal folder
-e.g.,
+e.g., 
+
 <img src="YOLO_structure.png" width="200">
 
 ## Training 
