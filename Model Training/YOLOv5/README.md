@@ -21,7 +21,7 @@ python 01_Data_Process.py
 
 
 The program will extract the corresponding label .txt files for each of the four outputs. 
-<img src="structure guide/data_structure.PNG" height="400"> 
+<img src="data_structure.PNG" height="400"> 
 
 
 ## Training Config
@@ -29,7 +29,7 @@ The training process requires a config file written in .yaml format for specifyi
 
 For each model, copy the image train and val folders from the previous "Data Preprocess" step into the image folder, and the label train and val folders into the corresponding labal folder
 e.g.,
-<img src="structure guide/YOLO_structure.PNG" width="200">
+<img src="YOLO_structure.PNG" width="200">
 
 ## Training 
 After placing all the data in the correct folder, you are good to go with the training commands.
