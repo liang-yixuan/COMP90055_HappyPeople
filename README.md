@@ -17,17 +17,17 @@ Object detection System to identify age, emotion, ethnicity, and gender on human
 - Train models in open-sourced [**SSD**](https://github.com/bubbliiiing/ssd-pytorch), [**Faster RCNN**](https://github.com/jwyang/faster-rcnn.pytorch), [**YOLOv5**](https://github.com/ultralytics/yolov5/tree/v5.0) frameworks, using Pytorch
 - Our [**trained models**](https://drive.google.com/drive/folders/1tApOSxJigiSoclxau9_nBXM2P1DXP6Kl?usp=sharing) used in the applications are available.   
 
-2. In [Backend](https://github.com/Yicheng-ZHANG/COMP90055_HappyPeople/tree/main/Backend) - API
+2. In [Backend](https://github.com/liang-yixuan/COMP90055_HappyPeople/tree/main/Backend) - API
 
 - Deploy trained models on server, using Flask, Docker, and MRC
 
-3. In [Mobile Application](https://github.com/Yicheng-ZHANG/COMP90055_HappyPeople/tree/main/Mobile%20Application)
+3. In [Mobile Application](https://github.com/liang-yixuan/COMP90055_HappyPeople/tree/main/Mobile%20Application)
 
 - Develop mobile application in iOS and Android platform, using Swift and Java - [Video Demo](https://youtu.be/_GdX4mrPM7E)
 
 4. Result Analysis
 
-- Report result comparison between frameworks - [**Precentation Slides**](https://docs.google.com/presentation/d/1t_0dr-IViAweStPhS6tD02feLGEeLS-H/edit?usp=sharing&ouid=118217110244173882486&rtpof=true&sd=true) & [**Report**](https://drive.google.com/file/d/12QyHq-QlF9SrpQ2Jylp6m5HA1519cltQ/view?usp=sharing)
+- Report result comparison between frameworks - [**Precentation Slides**](https://docs.google.com/presentation/d/1sKYIuoOt934rCShjMst34ckCDKpBUPqF/edit?usp=sharing&ouid=109103948869080525133&rtpof=true&sd=true) & [**Report**](https://drive.google.com/file/d/18AqVIqwiEsgNzCxA0Vcw87Xw7bbCx5nH/view?usp=sharing)
 
 
 
