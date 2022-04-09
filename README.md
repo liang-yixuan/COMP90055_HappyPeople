@@ -1,15 +1,18 @@
-# Happy People Project (COMP90055 Sem2 2021)
+<div align='center'>
+  <h1>Happy People Project (COMP90055 Sem2 2021)</h1>
+</div>
+
 
 <!-- [![youtube badge](https://img.shields.io/youtube/views/_GdX4mrPM7E?style=for-the-badge&logo=youtube&logoColor=red)](https://youtu.be/_GdX4mrPM7E) -->
 [![youtube badge](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/_GdX4mrPM7E)
 
-## Project Objective
+# 🚀 Project Objective 🥳 
 
 Object detection System to identify age, emotion, ethnicity, and gender on human faces
 
 
 
-## Tasks
+# 👨‍💻 Tasks
 
 1. In [Model Training](https://github.com/Yicheng-ZHANG/COMP90055_HappyPeople/tree/main/Model%20Training)
 
@@ -31,7 +34,7 @@ Object detection System to identify age, emotion, ethnicity, and gender on human
 
 
 
-## Contributor 
+# 👩🏼‍🎓 Contributor 
 
 Student: Yixuan Liang 
 
@@ -41,7 +44,7 @@ Student: Siyang Chen
 
 
 
-## Acknowledgement
+# 👋🏼 Acknowledgement
 
 - Professor Richard Sinnott at the University of Melbourne as the supervisor for this project.
 
