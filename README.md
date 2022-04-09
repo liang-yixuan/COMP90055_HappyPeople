@@ -1,5 +1,6 @@
 # Happy People Project (COMP90055 Sem2 2021)
 
+[![youtube badge](https://img.shields.io/youtube/views/_GdX4mrPM7E?style=social)](https://youtu.be/_GdX4mrPM7E)
 
 
 ## Project Objective
