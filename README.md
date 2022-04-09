@@ -1,6 +1,7 @@
 <div align='center'>
   <h1>Happy People Project (COMP90055 Sem2 2021)</h1>
 </div>
+
 ![Screenshot](ScreenShot_Demo.png)
 
 <!-- [![youtube badge](https://img.shields.io/youtube/views/_GdX4mrPM7E?style=for-the-badge&logo=youtube&logoColor=red)](https://youtu.be/_GdX4mrPM7E) -->
